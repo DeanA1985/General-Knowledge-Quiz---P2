@@ -156,7 +156,31 @@ background-color: #969eba;
 
 
 }
-.answer{
+.answer .checkbox{
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 3px solid #3f4868;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
     
+
 }
 
+.answer .checkbox .icon{
+    opacity: 0;
+}
+.answer:hover .checkbox,
+.answer.selected .checkbox
+{
+    background-color: #2687e3;
+    border-color: #2687e3;
+
+}
+
+.answer.selected .checkbox .icon{
+    opacity: 1;
+}
