@@ -184,3 +184,9 @@ background-color: #969eba;
 .answer.selected .checkbox .icon{
     opacity: 1;
 }
+.answer.correct{
+    border-color: #4cfb49;
+}
+.answer.wrong{
+    border-color: #fc3939;
+}
