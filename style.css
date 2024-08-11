@@ -62,6 +62,7 @@ select{
     background-color: #2687e3;
     border: none;
     border-radius: 10px;
+    margin-top: 50px;
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -69,10 +70,10 @@ select{
     transition: all 0.3s linear;
 }
 .btn :hover{
-    background-color: ;
+    background-color: #539add;
 }
 .btn:disabled{
-cursor: ;
-background-color: ;
+cursor: not-allowed;
+background-color: #969eba;
 }
 
