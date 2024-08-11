@@ -38,9 +38,10 @@ body{
 
 label{
     display: block;
-    font-size: ;
-    margin-bottom: ;
+    font-size: 12px;
+    margin-bottom: 10px;
     color: white;
+    text-transform: capitalize;
 
 }
 
@@ -54,5 +55,24 @@ select{
     color: rgb(38, 67, 109);
     font-size: 14px;
 
+}
+.btn{
+    width: 100%;
+    height: 60px;
+    background-color: #2687e3;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn :hover{
+    background-color: ;
+}
+.btn:disabled{
+cursor: ;
+background-color: ;
 }
 
