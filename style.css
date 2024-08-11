@@ -190,3 +190,32 @@ background-color: #969eba;
 .answer.wrong{
     border-color: #fc3939;
 }
+.question-wrapper,
+.answer-wrapper{
+    margin-bottom: 50px;
+
+}
+.btn.next{
+    /* show when answer is clicked and submitted*/
+    display: none
+}
+.end-screen .score {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.end-screen .score-text{
+    color: #969eba;
+    font-size: 16px;
+    margin-bottom: 120px;
+
+}
+@media (max-width:468) {
+    .container {
+        min-height: 100vh;
+        max-width: 100%;
+    }
+}
