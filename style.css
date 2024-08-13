@@ -55,9 +55,12 @@ body{
 
 /*Hover States for buttons */
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #222;
     color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 
 #next-btn {
@@ -71,4 +74,15 @@ body{
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+/* Correct and Incorrect class button states*/
+/* Will change to green or red when correct/incorrect answer is given*/
+
+.correct {
+    background: #3bdd81;
+
+}
+
+.incorrect {
+    background: #f87070
 }

@@ -44,7 +44,7 @@ const questions = [
   answers: [
     {text: "6", correct: false},
     {text: "12", correct: true},
-    {text: "18", correct: true},
+    {text: "18", correct: false},
     {text: "36", correct: false},
 
   ]
@@ -99,6 +99,107 @@ const questions = [
 
   ]
 },
+{
+  question: "What car manufacturer had the highest revenue in 2020?",
+  answers: [
+    {text: "Ford", correct: false},
+    {text: "BMW", correct: false},
+    {text: "Volkswagen", correct: true},
+    {text: "KIA", correct: false},
+
+  ]
+},
+{
+  question: "What country has won the most FIFA World Cups?",
+  answers: [
+    {text: "Germany", correct: false},
+    {text: "France", correct: false},
+    {text: "Italy", correct: false},
+    {text: "Brazil", correct: true},
+
+  ]
+},
+{
+  question: "What is the largest Spanish-speaking country in the world?",
+  answers: [
+    {text: "Mexico City", correct: true},
+    {text: "Madrid", correct: false},
+    {text: "Buenos Aires", correct: false},
+    {text: "Lima", correct: false},
+
+  ]
+},
+{
+  question: "What company was initially known as Blue Ribbon Sports?",
+  answers: [
+    {text: "Reebok", correct: false},
+    {text: "Asics", correct: false},
+    {text: "Adidas", correct: false},
+    {text: "Nike", correct: true},
+
+  ]
+},
+{
+  question: "What is the fourth letter of the Greek Alphabet?",
+  answers: [
+    {text: "Sigma", correct: false},
+    {text: "Alpha", correct: false},
+    {text: "Delta", correct: true},
+    {text: "Beta", correct: false},
+
+  ]
+},
+{
+  question: "In what country is the Chernobyl nuclear plant located?",
+  answers: [
+    {text: "Russia", correct: false},
+    {text: "Finland", correct: false},
+    {text: "Ukraine", correct: true},
+    {text: "Poland", correct: false},
+
+  ]
+},
+{
+  question: "What Colombian city is referred to as la ciudad de la eterna primavera?",
+  answers: [
+    {text: "Medellin", correct: true},
+    {text: "Cartagena", correct: false},
+    {text: "Baranquilla", correct: false},
+    {text: "Quibdo", correct: false},
+
+  ]
+},
+{
+  question: "Who discovered that the Earth relvoves around the Sun?",
+  answers: [
+    {text: "Sir Isaac Newton", correct: false},
+    {text: "Sir Francis Drake", correct: false},
+    {text: "Galileo", correct: false},
+    {text: "Nicolaus Copernicus", correct: true},
+
+  ]
+},
+{
+  question: "What is the most common surname in the United States?",
+  answers: [
+    {text: "Davis", correct: false},
+    {text: "Smith", correct: true},
+    {text: "Jones", correct: false},
+    {text: "Rogers", correct: false},
+
+  ]
+},
+{
+  question: "What country has the highest life expectancy?",
+  answers: [
+    {text: "Hong Kong", correct: true},
+    {text: "Germany", correct: false},
+    {text: "India", correct: false},
+    {text: "Saudi Arabia", correct: false},
+
+  ]
+},
+
 
 ];
 
@@ -128,6 +229,10 @@ function showQuestion(){
     button.innerHTML = answer.text;
     button.classList.add("btn");
     answerButtons.appendChild(button);
+    if(answer.correct){
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
 
   });
 }
@@ -138,6 +243,57 @@ function resetState(){
     answerButtons.removeChild(answerButtons.firstChild);
   }
 }
+
+function selectAnswer(e){
+  const selectedBtn = e.target;
+  const isCorrect = selectedBtn.dataset.correct  === "true";
+  if(isCorrect){
+    selectedBtn.classList.add("correct");
+    score++;
+  }else{
+    selectedBtn.classList.add("incorrect");
+  }
+  Array.from(answerButtons.children).forEach(button => {
+    if(button.dataset.correct === "true"){
+      button.classList.add("correct");
+    }
+    button.disabled = "true";
+  });
+
+  nextButton.style.display = "block";
+  
+}
+
+function showScore(){
+  resetState();
+  questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
+  nextButton.innerHTML = "Play Quiz Again";
+  nextButton.style.display = "block";
+}
+
+
+
+
+function handleNextButton(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex < questions.length){
+    showQuestion();
+  }else{
+    showScore();
+  }
+}
+
+
+
+
+nextButton.addEventListener("click", () =>{
+  if(currentQuestionIndex < questions.length){
+    handleNextButton();  
+  }else{
+    startQuiz();
+  }
+})
+
 
 startQuiz();
 // Code to Display Answers//
