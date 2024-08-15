@@ -9,8 +9,56 @@
 }
 
 body{
-    background: #14366d;
+    background: url("/img/vecteezy_dark-futuristic-with-purple-neon-line-background_8060028.jpg");
+    background-size: cover;
+    
 
+}
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100dvh;
+    background: #ffffff29;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 40px;
+    color:#ffffff;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+#quiz-instructions {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+p{
+    color: #ffffff;
+}
+
+#start-quiz {
+    background: #f72be0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.hide {
+    display: none;
 }
 
 .app {
@@ -20,11 +68,12 @@ body{
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 5px 5px #f72be0;
 }
 
 .app h1 {
     font-size: 25px;
-    color: #14366d;
+    color: #030256;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -36,7 +85,7 @@ body{
 
 .quiz h2 {
     font-size: 18px;
-    color: #14366d;
+    color: #030256;
     font-weight: 600;
 }
 .btn {
@@ -64,7 +113,7 @@ body{
 }
 
 #next-btn {
-    background: #14366d;
+    background: #f72be0;
     color: white;
     font-weight: 500;
     width: 150px;
@@ -86,3 +135,4 @@ body{
 .incorrect {
     background: #f87070
 }
+

@@ -3,24 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knowledge Quiz</title>
+  <title>Knowledge Quiz</title>  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="app">
+    <div class="landing-page" id="welcome">
+     <div id="main-container">
+       <h1>Welcome to The Knowledge Quiz</h1>
+        <details><summary id="quiz-instructions">Instructions</summary>
+        <p>There are 20 questions in total and you must select 1 answer, your score will be totalled on how many answers you got right out of 20</p></details>
+        <button id="start-quiz">Start Quiz</button>
+     </div>
+    </div>
+    <!-- White Rectangle for Quiz-->
+   <div class="app hide" id="quizapp">
     <h1>Knowledge Quiz</h1>
+    <!--Quiz Area-->
     <div class="quiz">
+      <!--Question Area-->
       <h2 id = "question">Question goes here</h2>
-      <div id ="answer-buttons">
+      <!--Answer Buttons-->
+       <div id ="answer-buttons">
         <button class ="btn">Answer 1</button>
         <button class ="btn">Answer 2</button>
         <button class ="btn">Answer 3</button>
         <button class ="btn">Answer 4</button>
        </div>
+       <!--Next Button-->
        <button id ="next-btn">Next Question</button>
    </div>
    
+   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
    <script src="script.js"></script>
+   
 </body>
 </html>
     
