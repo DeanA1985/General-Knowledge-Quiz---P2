@@ -9,7 +9,7 @@ function quizStart() {
     confettiDrop();
 }
 
-// Add event listener to the button
+// Add event listener to the Start button
 document.getElementById("start-quiz").addEventListener("click", quizStart);
 
 // These are the questions for the Quiz
@@ -215,16 +215,17 @@ const questions = [
   ]
 },
 
-
 ];
-
+/* Whenever you start the quiz and give an answer the score will change*/
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 score = 0;
-
+/*When you restart the quiz this function resets the current question index back to 0 
+and the score back to zero, it also allows the next button to appear once avery question
+is answered correctly or incorrectly*/
 function startQuiz(){
   currentQuestionIndex = 0;
   score = 0;
@@ -232,14 +233,14 @@ function startQuiz(){
   showQuestion();
   
 }
-
+/*Displays the questions in the sequence that they are meant to be*/
 function showQuestion(){
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.
     question;
-
+/*Displays the answers to the current question*/
   currentQuestion.answers.forEach(answer => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
@@ -259,7 +260,8 @@ function resetState(){
     answerButtons.removeChild(answerButtons.firstChild);
   }
 }
-
+/*Targets CSS Classes for correct and incorrect states and changes answer
+ blocks colours accordingly*/
 function selectAnswer(e){
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct  === "true";
@@ -326,9 +328,6 @@ function handleNextButton(){
     showScore();
   }
 }
-
-
-
 
 nextButton.addEventListener("click", () =>{
   if(currentQuestionIndex < questions.length){

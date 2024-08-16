@@ -73,7 +73,7 @@ p{
 
 .app h1 {
     font-size: 25px;
-    color: #030256;
+    color: #69286a;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -85,10 +85,11 @@ p{
 
 .quiz h2 {
     font-size: 18px;
-    color: #030256;
+    color: #69286a;
     font-weight: 600;
 }
 .btn {
+    /* Answer Button Class */
     background: white;
     color: #222;
     font-weight: 500;
