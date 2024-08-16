@@ -65,7 +65,7 @@ p{
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 5px 5px #f72be0;
+    box-shadow: 5px 5px #4f0446;
 }
 
 .app h1 {
@@ -111,7 +111,7 @@ p{
 }
 
 #next-btn {
-    background: #f72be0;
+    background: #7c0c6f;
     color: white;
     font-weight: 500;
     width: 150px;

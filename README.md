@@ -68,5 +68,14 @@ I have passed the code through the w3c validator which returned two errors which
 ## CSS
 
 I have passed the code through the Jigsaw validator which returned no errors.
-[Click for results in jigsaw validator]
+[Click for results in jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdeana1985.github.io%2FGeneral-Knowledge-Quiz---P2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+## Javascript
+
+I have passed the code through JShint validator which returned no errors. There are 13 functions in this file.
+
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 8 statements in it, while the median is 4.
+
+The most complex function has a cyclomatic complexity value of 2 while the median is 2.
