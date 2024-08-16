@@ -8,14 +8,13 @@
 
 }
 
-body{
+body {
     background: url("../img/vecteezy_dark-futuristic-with-purple-neon-line-background_8060028.jpg");
-    background-size: cover;
-    
-
+    background-color: #000000;
+    background-size: cover;   
 }
 
-.landing-page{
+.landing-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +52,6 @@ p{
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-
 }
 
 .hide {
