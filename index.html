@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>General Knowledge Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <title>General Knowledge Quiz powered by API</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&dislay=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
 </head>
 
 <body>
   <!-- Start Screen-->
-  <div id="start-screen" class="visible">
+  <div id="start-screen">
     <h1>Welcome to the General Knowledge Quiz!</h1>
     <button id="start-button">Start Quiz</button>
   </div>
@@ -27,11 +27,12 @@
   <div id="end-screen">
     <h1>Congratulations!</h1>
     <p>You completed the quiz!</p>
+    <p>Your Score: <span id="final-score"></span></p>
     <button id="reset-button">Reset Quiz</button>
     <canvas id="confetti-canvas"></canvas>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/canvas=confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="quiz.js"></script>
+  
+  <script src="quiz.js"></script>
   </div>
 </body>
 

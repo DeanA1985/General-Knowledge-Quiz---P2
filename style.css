@@ -1,3 +1,4 @@
+/*General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background:linear-gradient(135deg, #6d83f2, #8344ad);
@@ -50,8 +51,9 @@ button:active {
     animation: fadeIn 1s ease;
 
 }
+/*Ensure that the start screen is visible*/
 
-.visible {
+#start-screen {
     display: block;
 }
 
@@ -84,8 +86,13 @@ button:active {
     font-size: 1.2rem;
     font-weight: bold;
     color: #E74C3C;
+
 }
 
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 #confetti-canvas {
     position: fixed;
     top: 0;
