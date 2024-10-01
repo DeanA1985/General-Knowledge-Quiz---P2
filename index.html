@@ -13,27 +13,22 @@
   <!-- Start Screen-->
   <div id="start-screen">
     <h1>Welcome to the General Knowledge Quiz!</h1>
-    <p>Test your knowledge by answering multiple-choice questions!</p>
-    <button id="proceed-to-options">Start Quiz</button>
+    <button id="instructions-button">Instructions</button>
+     <button id="start-quiz">Start Quiz</button>
   </div>
 
-  <!--Instructions Section (in options screen)-->
-  <div id="instructions"style="display:none;">
-    <h1>Instructions</h1>
-    <p>The objective of this quiz is to test your knowledge. Answer the multiple-choice
-      questions within the time limit. You can choose how mnay questions you'd like to answer
-      and the category for the quiz
-    </p>
+  <!--Instructions Screen-->
+  <div id="instructions-screen">
+    <h1>Quiz Instructions</h1>
+    <p>Here's how it works:</p>
+    <ul>
+      <li>You will be asked multiple choice questions.</li>
+      <li>Select the correct answer.</li>
+      <li>Try and get as many correct answers as possible!</li>
+      <li>The countdown timer begins giving you 10 seconds to answer each question</li>
+    </ul>
+    <button id="back-to-start">Back to Start</button>
   </div>
-
-  <!--Options Screen-->
-  <div id="options-screen"style="display:none;">
-    <h2>Select Your Quiz Options</h2>
-  </div>
-
-  <!--Number of Questions-->
-  <label for="num-questions">Number of Questions:</label>
-  <input type="number" id="num-questions" value="5" min="1" max="50">
 
   <!-- Quiz Screen-->
   <div id="quiz-screen">

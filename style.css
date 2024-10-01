@@ -1,28 +1,34 @@
 /*General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background:linear-gradient(135deg, #6d83f2, #8344ad);
+    background: linear-gradient(135deg, #6D83F2, #8E44AD);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-}
+    padding: 0;
 
+
+}
+/*Text Styling */
 h1, h2, p {
-    margin:0.5em
+    margin:0.5em;
+    text-align: center;
 }
-
+ul {
+    list-style-type: circle;
+    padding: 40px;
+}
+/* Button Styling */
 button {
     font-family: 'Poppins', sans-serif;
     background-color: #6C5CE7;
     color: white;
     border: none;
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
@@ -34,12 +40,8 @@ button:hover {
     transform: scale(1.05);
 }
 
-button:active {
-    transform: scale(0.95);
-}
-
-/* Screen Containers */
-#start-screen, #quiz-screen, #end-screen {
+/* Screen Container Styling */
+#start-screen, #quiz-screen, #instructions-screen, #end-screen {
     display: none;
     width: 100%;
     max-width: 600px;
@@ -48,50 +50,58 @@ button:active {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    animation: fadeIn 1s ease;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-/*Ensure that the start screen is visible*/
+/*Ensure that the start screen is visible by default*/
 
 #start-screen {
-    display: block;
+    display: flex;
 }
-
-#start-screen h1, #end-screen h1 {
-    font-size:  2rem;
-    font-weight: 600;
-}
-
-#question {
-    font-size: 1.5rem;
+#start-screen button {
     margin-bottom: 20px;
 }
 
+#start-screen button:last-child {
+    margin-bottom: 0;
+}
+
 #choices button {
-    display: block;
     width: 100%;
     margin: 10px 0;
-    padding: 15px;
+    padding: 10px 15px;
+    font-size: 1 rem;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    background-color: #6C5CE7;
+    color: white;
+    border: none;
+    transition: background-color 0,3s ease;
 }
 
-#choices button:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
+/* Timer Styling */
 #timer {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #E74C3C;
-
+    color: #E74C3C
 }
-
+/* Disable buttons after a choice */
 button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+/* Correct and Wrong Answer Button Highlighting */
+.correct-answer {
+    background-color: green;
+    color: white;
+}
+
+.wrong-answer {
+    background-color: red;
+    color: white;
 }
 #confetti-canvas {
     position: fixed;
