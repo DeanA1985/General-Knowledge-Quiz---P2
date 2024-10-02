@@ -10,50 +10,38 @@ At the end of the quiz the players score is calculated out of 20. And they are c
 
 The project is aimed at any age demographic who just enjoy exercising their general knowledge or who want to learn something new, just for fun. 
 
-![Quiz Mockup](assets/img/QuizMockups.png)
-
-## Features
-
-On the landing page which essentially is a Welcome Page we have and Introduction which is a drop down which gives basic instructions as to how to quiz works 
-
+![Quiz Mockup](assets/img/quizmockups1.png)
+ 
 ### Instructions
 
-![Instructions](assets/img/Instructions.png)
+![Instructions](assets/img/quizinstructions.png)
 
 ### Start Quiz Button
 
-This button starts launches the quiz and also on launch drops confetti on the screen as a jubilant welcoming for the player.
+This button starts launches the quiz. Once the quiz is launched a countdown begins on each question.
 
-![StartQuiz](assets/img/StartQuiz.png)
-
-Then the confetti drops 
-
-![StartQuizConfetti](assets/img/StartQuizConfettiIntro.png)
+![StartQuiz](assets/img/startquiz1.png)
+![Countdown](assets/img/countdown.png)
 
 ### Correct/ Incorrect Answers
 
 As mentioned earlier answers can either pushed right or wrong if the user pushes a incorrect answer the quiz will hilight the correct answer alongside the chosen wrong answer.
 
 Example 1
-![IncorrectCorrect](assets/img/IncorrectCorrectAnswer.png)
+![IncorrectCorrect](assets/img/correctincorrect.png)
 
 Example 2
-![Correct](assets/img/CorrectAnswer.png)
+![Correct](assets/img/correct.png)
 
-### Next Question
-
-Once a question is answered we can proceed by clicking the Next Button at the bottom of the page.
-![NextButton](assets/img/NextQuestion.png)
-
-### ShowScore and Confetti
+### Final Score and Confetti Drop
 
 Once the player has completed the quiz they are given a score which is their total correct responses out of 20 a confetti explosion accompanies this to evoke a positive emotion of the player finally completing the quiz.
 
-![ScoreandConfetti](assets/img/ScoreandConfetti.png)
+![ScoreandConfetti](assets/img/congratulations.png)
 
-Once the confetti subsides the player has the option to restart the quiz by clicking the PlayQuizAgain button.
+Once the confetti subsides the player can see their score and reset the quiz
 
-![PlayQuizAgain](assets/img/PlayQuizAgain.png)
+![Resetquiz](assets/img/finalscore.png)
 
 
 # Testing
@@ -89,7 +77,9 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 # Credits 
 
-- The content for the quiz was taken from the open trivia database a free to use user contributed trivia question data base 
+- The content for the quiz was taken from the open trivia database a free to use user contributed trivia question data base. The Open Trivia Database provides a completely free JSON API for use in programming projects. Use of this API does not require a API Key, just generate the URL below use it in your own application to retrieve trivia questions.
+
+All data provided by the API is available under the Creative Commons Attribution-ShareAlike 4.0 International License.
 
 
 
