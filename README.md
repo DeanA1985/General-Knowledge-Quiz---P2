@@ -2,11 +2,11 @@
 
 # How does the Knowledge Quiz Work.
 
-The Knowledge Quiz is a multiple choice quiz which tests the users general knowledge through a set of 20 questions. Each question comes with 4 multiple choice options which are represented by buttons in the app.
+The Knowledge Quiz is a multiple choice quiz which tests the users general knowledge through a set of 10 questions. Each question comes with 4 multiple choice options which are represented by buttons in the app.
 
 When the correct option is selected by the player, the answer button hilights green. If an incorrect option is selected by the player the answer button hilights red and the correct answer is hilighted in every instance once a question is answered the player progresses through the quiz scoring a point for each question they have correct. Incorrect answers do not score points. 
 
-At the end of the quiz the players score is calculated out of 20. And they are congratulated by on screen animations to signifying that they have completed the quiz. 
+At the end of the quiz the players score is calculated out of 10. And they are congratulated by on screen animations to signifying that they have completed the quiz. 
 
 The project is aimed at any age demographic who just enjoy exercising their general knowledge or who want to learn something new, just for fun. 
 
