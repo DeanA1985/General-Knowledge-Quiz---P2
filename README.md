@@ -6,7 +6,7 @@ The Knowledge Quiz is a multiple choice quiz which tests the users general knowl
 
 When the correct option is selected by the player, the answer button hilights green. If an incorrect option is selected by the player the answer button hilights red and the correct answer is hilighted in every instance once a question is answered the player progresses through the quiz scoring a point for each question they have correct. Incorrect answers do not score points. 
 
-At the end of the quiz the players score is calculated out of 20. And they are congratulated by on screen animations to signifying that they have completed the quiz. At the start of the quiz on screen animations also are present.
+At the end of the quiz the players score is calculated out of 20. And they are congratulated by on screen animations to signifying that they have completed the quiz. 
 
 The project is aimed at any age demographic who just enjoy exercising their general knowledge or who want to learn something new, just for fun. 
 
@@ -67,7 +67,7 @@ I have passed the code through the w3c validator which returned two errors which
 
 ## CSS
 
-I have passed the code through the Jigsaw validator which returned no errors.
+I have passed the code through the Jigsaw validator which returned a few errors however none of these errors are effecting the functionality of the site
 [Click for results in jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdeana1985.github.io%2FGeneral-Knowledge-Quiz---P2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## Javascript
@@ -79,3 +79,19 @@ Function with the largest signature take 2 arguments, while the median is 0.
 Largest function has 8 statements in it, while the median is 4.
 
 The most complex function has a cyclomatic complexity value of 2 while the median is 2.
+
+# Deployment 
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- The live link can be found here https://deana1985.github.io/General-Knowledge-Quiz---P2/
+
+# Credits 
+
+- The content for the quiz was taken from the open trivia database a free to use user contributed trivia question data base 
+
+
+
+
+
