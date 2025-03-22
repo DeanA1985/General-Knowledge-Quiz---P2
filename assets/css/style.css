@@ -1,9 +1,7 @@
 /*General Styles */
 body {
   font-family: "Poppins", sans-serif;
-  background: url("https://svgshare.com/i/11fM.svg") no-repeat center center
-    fixed;
-  background-size: cover;
+  background: linear-gradient(135deg, #6d83f2, #8e44ad);
   color: white;
   display: flex;
   justify-content: center;
