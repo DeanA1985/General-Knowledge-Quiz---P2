@@ -68,6 +68,18 @@ Largest function has 8 statements in it, while the median is 4.
 
 The most complex function has a cyclomatic complexity value of 2 while the median is 2.
 
+## Additional Features on Resubmission of Project 23/3/2025
+
+I have added a 404 page which acts as a page not found if the url for the quiz has been entered incorrectly. 
+
+https://deana1985.github.io/General-Knowledge-Quiz---P2/ if you add anything after the forward slash for example 
+
+https://deana1985.github.io/General-Knowledge-Quiz---P2/bad
+
+The 404 page can be accessed, you can be redirected to the Quiz by clicking a button on the 404 page that takes you back to the quiz.
+
+![404page](assets/img/404page.png)
+
 # Deployment 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
