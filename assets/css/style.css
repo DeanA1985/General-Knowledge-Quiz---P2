@@ -1,7 +1,7 @@
 /*General Styles */
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #6d83f2, #8e44ad);
+  background: linear-gradient(to right, #6d83f2, #8e44ad);
   color: white;
   display: flex;
   justify-content: center;
@@ -201,7 +201,7 @@ button:disabled {
   height: 100vh;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg, #6d83f2, #8e44ad);
+  background: linear-gradient(to right, #6d83f2, #8e44ad);
   color: white;
   font-family: "Poppins", sans-serif;
 }
