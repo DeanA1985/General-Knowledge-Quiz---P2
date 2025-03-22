@@ -1,5 +1,5 @@
-/*General Styles */
-body {
+/*General Quiz Page Body Styling */
+body:not(.not-found) {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to right, #6d83f2, #8e44ad);
   color: white;
@@ -10,7 +10,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /*Text Styling */
+
 h1,
 h2,
 p {
@@ -21,7 +23,9 @@ ul {
   list-style-type: circle;
   padding: 40px;
 }
+
 /* Button Styling */
+
 button {
   font-family: "Poppins", sans-serif;
   background-color: #6c5ce7;
@@ -40,7 +44,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Screen Container Styling */
+/* Screen Container Styling for Quiz */
 #start-screen,
 #quiz-screen,
 #instructions-screen,
@@ -85,12 +89,15 @@ button:hover {
 }
 
 /* Timer Styling */
+
 #timer {
   font-size: 1.2rem;
   font-weight: bold;
   color: #e74c3c;
 }
+
 /* Disable buttons after a choice */
+
 button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -106,6 +113,9 @@ button:disabled {
   background-color: red;
   color: white;
 }
+
+/* Confetti */
+
 #confetti-canvas {
   position: fixed;
   top: 0;
@@ -191,50 +201,6 @@ button:disabled {
     font-size: 0.9rem;
   }
 }
-/* 404 Page Container */
-
-.screen-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
-  background: linear-gradient(to right, #6d83f2, #8e44ad);
-  color: white;
-  font-family: "Poppins", sans-serif;
-}
-
-.screen-container h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.screen-container p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-/* Button Styling */
-
-.screen-container button {
-  font-family: "Poppins", sans-serif;
-  background-color: #6c5ce7;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.screen-container button:hover {
-  background-color: #9b59b6;
-  transform: scale(1.05);
-}
 
 /* Shake Animation */
 @keyframes shake {
@@ -289,4 +255,63 @@ button:disabled {
 .error-box p,
 .error-box button {
   color: white;
+}
+
+/* 404 Page specific styles */
+
+body.not-found {
+  background-color: white;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body.not-found .screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+body.not-found .error-box {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+body.not-found h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+body.not-found p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+body.not-found button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body.not-found button:hover {
+  background-color: #5a4cd1;
 }
