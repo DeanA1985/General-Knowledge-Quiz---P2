@@ -273,3 +273,20 @@ button:disabled {
     padding: 12px 20px;
   }
 }
+
+.error-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+}
+
+.error-box h1,
+.error-box p,
+.error-box button {
+  color: white;
+}
