@@ -1,186 +1,275 @@
 /*General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #6D83F2, #8E44AD);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-
-
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6d83f2, #8e44ad);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 /*Text Styling */
-h1, h2, p {
-    margin:0.5em;
-    text-align: center;
+h1,
+h2,
+p {
+  margin: 0.5em;
+  text-align: center;
 }
 ul {
-    list-style-type: circle;
-    padding: 40px;
+  list-style-type: circle;
+  padding: 40px;
 }
 /* Button Styling */
 button {
-    font-family: 'Poppins', sans-serif;
-    background-color: #6C5CE7;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #9b59b6;
-    transform: scale(1.05);
+  background-color: #9b59b6;
+  transform: scale(1.05);
 }
 
 /* Screen Container Styling */
-#start-screen, #quiz-screen, #instructions-screen, #end-screen {
-    display: none;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#start-screen,
+#quiz-screen,
+#instructions-screen,
+#end-screen {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /*Ensure that the start screen is visible by default*/
 
 #start-screen {
-    display: flex;
+  display: flex;
 }
 #start-screen button {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #start-screen button:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #choices button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #6C5CE7;
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 /* Timer Styling */
 #timer {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #E74C3C
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
 }
 /* Disable buttons after a choice */
 button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* Correct and Wrong Answer Button Highlighting */
 .correct-answer {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 
 .wrong-answer {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 #confetti-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
 }
 
 /*-- Animations */
 
 @keyframes fadeIn {
-from {
+  from {
     opacity: 0;
     transform: translateY(20px);
-}
-to {
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
-}
+  }
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*-- Responsive Design: Small Devices */
 @media (max-width: 768px) {
-    body {
-        padding: 20px;
-    }
-    h1,h2 {
-        font-size: 1.5rem;
-    }
-    button {
-        font-size: 0.9rem;
-        padding: 12px 20px;
-    }
-    #start-screen, #quiz-screen, #end-screen {
-        max-width: 90%;
-    }
-    #question {
-        font-size: 1.2rem;
-    }
-    #choices button {
-        padding: 12px;
-        font-size: 0.9rem;
-    }
-    #timer {
-        font-size: 1rem;
-    }
+  body {
+    padding: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+  #start-screen,
+  #quiz-screen,
+  #end-screen {
+    max-width: 90%;
+  }
+  #question {
+    font-size: 1.2rem;
+  }
+  #choices button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  #timer {
+    font-size: 1rem;
+  }
 }
 
 /* Responsive Design: Mobile (max-width: 480px) */
 @media (max-width: 480px) {
-    h1, h2{
-        font-size: 1.2rem;
-    }
-    button {
-        font-size: 0.8rem;
-        padding: 10px 18px;
-    }
-    #question {
-        font-size: 1rem;
-    }
-    #choices button {
-        padding: 10px;
-        font-size: 0.8rem;
-    }
-    #timer {
-        font-size: 0.9rem;
-    }
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 0.8rem;
+    padding: 10px 18px;
+  }
+  #question {
+    font-size: 1rem;
+  }
+  #choices button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  #timer {
+    font-size: 0.9rem;
+  }
+}
+/* 404 Page Container */
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6d83f2, #8e44ad);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.screen-container h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.screen-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Button Styling */
+
+.screen-container button {
+  font-family: "Poppins", sans-serif;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.screen-container button:hover {
+  background-color: #9b59b6;
+  transform: scale(1.05);
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(5px);
+  }
+  75% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.shake {
+  animation: shake 0.6s ease-in-out 0.3s;
+}
+
+@media (max-width: 400px) {
+  .screen-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .screen-container p {
+    font-size: 1rem;
+  }
+
+  .screen-container button {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
 }
